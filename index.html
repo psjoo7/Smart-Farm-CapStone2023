@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main-page.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Link ( Google Font ) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- -------------------------- -->
+    <script src="https://kit.fontawesome.com/6fdce6ff6d.js" crossorigin="anonymous"></script>
+    <title>Capstone 메인페이지</title>
+</head>
+<body>
+    
+    <div class="container main-background">
+        <!-- 헤더 섹션 -->
+        <div class="Head-Area">
+            <div class="section1">
+                <p class="toggleBtn"><i class="fa-solid fa-bars fa-lg headIcon"></i></p>
+            </div>
+            <div class="section2">
+                <p><i class="fa-brands fa-pagelines fa-lg" style="color: green;"></i></i></p>
+                <p style="margin-left: 0.3rem;"> Micro Smart Farm</p>
+            </div>
+            <div class="section3">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                <p><i class="fa-solid fa-video"></i></p>
+                <p><i class="fa-solid fa-bell"></i></p>
+                <p><i class="fa-sharp fa-solid fa-image-portrait"></i></p>
+            </div>
+        </div>
+
+        <!-- 네비바 섹션 -->
+        <div class="Nav-Area">
+            <div class="items1">
+                <p><i class="fa-solid fa-house"></i></p>
+                <p>HOME</p>
+            </div>
+            <div class="items2" onclick="location.href='diary.html'">
+                <p><i class="fa-solid fa-book"></i></p>
+                <p>DIARY</p>
+            </div>
+            <div class="items3">
+                <p><i class="fa-solid fa-gear"></i></p>
+                <p>SETTINGS</p>
+            </div>
+            <div class="items4">
+                <p><i class="fa-solid fa-leaf"></i></p>
+                <p>etc.</p>
+            </div>
+            
+        </div>
+
+        <!-- 메인 컨텐트 섹션 -->
+        <div class="Main-Area">
+            <div class="chart chart1">
+                <p><i class="fa-solid fa-temperature-low fa-3x"></i></p>
+                <div>
+                    <p class="text">Temperature</p>
+                    <p>10℃</p>
+                </div>
+            </div>
+            <div class="chart chart2">
+                <p><i class="fa-solid fa-sun fa-3x"></i></p>
+                <div>
+                    <p class="text">Sunshine</p>
+                    <p>1000lux</p>
+                </div>
+            </div>
+            <div class="chart chart3">
+                <p><i class="fa-solid fa-seedling fa-3x"></i></p>
+                <div>
+                    <p class="text">Soil Moisture</p>
+                    <p>00pF</p>
+                </div>
+            </div>
+            <div class="chart chart4">
+                <p><i class="fa-solid fa-droplet fa-3x"></i></p>
+                <div>
+                    <p class="text">Moisture</p>
+                    <p>00%</p>
+                </div>
+            </div>
+            <div class="plantImg">
+                <img src="img/plant.jpeg" alt="">
+            </div>
+        </div>
+
+
+    <!-- loading 화면 -->
+    <!-- <div class="loading">
+        <img src="img/loading.jpeg" alt="loading..." id="loading-image">
+    </div> -->
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        // $('.toggleBtn').on('click', function(){
+        //     if($('.Nav-Area').css('display') == 'block')
+        //         $('.Nav-Area').css('display', 'none');
+        //     else{
+        //         $('.Nav-Area').css('display', 'block');
+        //     }
+        // });
+        window.onbeforeunload = function () { $('#loading').show(); }  //현재 페이지에서 다른 페이지로 넘어갈 때 표시해주는 기능
+        $(window).load(function () {          //페이지가 로드 되면 로딩 화면을 없애주는 것
+            $('#loading').hide();
+        });
+
+
+    </script>
+</body>
+</html>

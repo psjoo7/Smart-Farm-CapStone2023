@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main-page.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/diary-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Link ( Google Font ) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- -------------------------- -->
+    <script src="https://kit.fontawesome.com/6fdce6ff6d.js" crossorigin="anonymous"></script>
+    <title>식물 일기</title>
+</head>
+<body>
+    
+    <div class="container main-background">
+
+        <!-- 헤더 섹션 -->
+        <div class="Head-Area">
+            <div class="section1">
+                <p class="toggleBtn"><i class="fa-solid fa-bars fa-lg headIcon"></i></p>
+            </div>
+            <div class="section2">
+                <p><i class="fa-brands fa-pagelines fa-lg" style="color: green;"></i></i></p>
+                <p style="margin-left: 0.3rem;"> Micro Smart Farm</p>
+            </div>
+            <div class="section3">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                <p><i class="fa-solid fa-video"></i></p>
+                <p><i class="fa-solid fa-bell"></i></p>
+                <p><i class="fa-sharp fa-solid fa-image-portrait"></i></p>
+            </div>
+        </div>
+
+        <!-- 네비바 섹션 -->
+        <div class="Nav-Area">
+            <div class="items1" onclick="location.href='index.html'">
+                <p><i class="fa-solid fa-house"></i></p>
+                <p>HOME</p>
+            </div>
+            <div class="items2" onclick="location.href='diary.html'">
+                <p><i class="fa-solid fa-book"></i></p>
+                <p>DIARY</p>
+            </div>
+            <div class="items3">
+                <p><i class="fa-solid fa-gear"></i></p>
+                <p>SETTINGS</p>
+            </div>
+            <div class="items4">
+                <p><i class="fa-solid fa-leaf"></i></p>
+                <p>etc.</p>
+            </div>
+            
+        </div>
+
+        <!-- Diary Section -->
+        <div class="Diary-Area">
+            
+            <div class="header">
+                <button class="prevBtn" onclick="prevCal()">prev</button>
+                <div class="title">
+                  <div class="yearTitle" style="font-size: 2rem;"></div>
+                  <div class="monthTitle" style="font-size: 2rem;"></div>
+                </div>
+                <button class="nextBtn" onclick="nextCal()">next</button>
+              </div>
+              <div class="main">
+                <div class="daies">
+                  <div class="day">Sun</div>
+                  <div class="day">Mon</div>
+                  <div class="day">Tue</div>
+                  <div class="day">Wed</div>
+                  <div class="day">Thu</div>
+                  <div class="day">Fri</div>
+                  <div class="day">Sat</div>
+                </div>
+                <div class="dates"></div>
+              </div>
+
+              <div class="modal-overlay">
+                <div class="modal-window">
+                    <div class="modal-title">
+                        <div class="modal-title-side"></div>
+                        <div>새 게시물 만들기</div>
+                        <div class="modal-title-side">
+                            <span id ="modal-close" class="material-icons-outlined">
+                                close
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/diary.js"></script>
+</body>
+</html>
