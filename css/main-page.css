@@ -1,18 +1,18 @@
-*{
-    /* margin: 0;
+* {
+  /* margin: 0;
     padding: 0; */
-    box-sizing: border-box;
-    font-size: 20px;
-    font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
 }
 /* 메인화면 백그라운드 설정 */
-.main-background{
+.main-background {
   width: 100%;
   height: 100%;
   position: relative;
@@ -21,7 +21,7 @@ body{
   /* filter: blur(5px); */
 }
 
-.main-background::before{
+.main-background::before {
   content: "";
   opacity: 0.08;
   position: absolute;
@@ -40,56 +40,55 @@ body{
   display: grid;
   grid-template-columns: 1.2fr 7fr;
   grid-template-rows: 75px auto;
-  grid-template-areas: 
-    'head head head'
-    'nav main main';
+  grid-template-areas:
+    "head head head"
+    "nav main main";
 }
 /* Head Section */
-.Head-Area{
+.Head-Area {
   background-color: black;
   grid-area: head;
   display: grid;
   /* padding: 10px; */
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: 
-    'ham title etc';
+  grid-template-areas: "ham title etc";
   text-align: center;
   align-items: center;
   opacity: 0.8;
 }
 
-.headIcon{
-  color: white
+.headIcon {
+  color: white;
 }
 /* Hamburger Button Area */
-.section1{
+.section1 {
   grid-area: ham;
 }
 /* Title  Area */
-.section2{
+.section2 {
   grid-area: title;
   display: flex;
   color: white;
   justify-content: center;
 }
 
-.section3{
+.section3 {
   grid-area: etc;
   display: flex;
   color: white;
   justify-content: right;
 }
 
-.section3 p:hover{
+.section3 p:hover {
   border-radius: 5px;
-  background-color : hsl(0, 0%, 40%);
+  background-color: hsl(0, 0%, 40%);
 }
 
-.section3 p{
+.section3 p {
   margin-right: 0.5rem;
 }
 /* Nav Sections */
-.Nav-Area{
+.Nav-Area {
   background-color: black;
   grid-area: nav;
   display: grid;
@@ -99,7 +98,7 @@ body{
   opacity: 0.8;
 }
 /* items Div Box Settings */
-.Nav-Area div{
+.Nav-Area div {
   display: flex;
   color: white;
   justify-content: center;
@@ -107,73 +106,73 @@ body{
   border-radius: 1rem;
 }
 
-.Nav-Area div:hover{
+.Nav-Area div:hover {
   margin: 0.8rem;
-  background-color : hsl(0, 0%, 18.82%);
+  background-color: hsl(0, 0%, 18.82%);
 }
-.Nav-Area p{
+.Nav-Area p {
   margin: 5px;
   font-size: 0.8rem;
 }
 
 /* Main Sections */
-.Main-Area{
+.Main-Area {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 1rem;
-  grid-template-areas: 
-    'temp lux image'
-    'sand most image'
-    'etc1 etc2 image';
+  grid-template-areas:
+    "temp lux image"
+    "sand most image"
+    "etc1 etc2 image";
 }
 /* 차트 전체 속성 */
-.chart{
+.chart {
   /* justify-content: center;
   align-items: center;
   text-align: center; */
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255,255,255, 50%);
+  background-color: rgba(255, 255, 255, 50%);
   padding: 1rem;
   margin: 0.5rem;
 }
-.text{
+.text {
   font-size: 1.3rem;
 }
-.chart p{
+.chart p {
   text-align: right;
 }
 /* 기온 섹션 */
-.chart1{
+.chart1 {
   grid-area: temp;
 }
 .chart1 i {
-  color:crimson;
+  color: crimson;
 }
-.chart2{
+.chart2 {
   grid-area: lux;
 }
 .chart2 i {
   color: red;
 }
-.chart3{
+.chart3 {
   grid-area: sand;
 }
-.chart3 i{
+.chart3 i {
   color: brown;
 }
-.chart4{
+.chart4 {
   grid-area: most;
 }
-.chart4 i{
-  color:dodgerblue;
+.chart4 i {
+  color: dodgerblue;
 }
-.plantImg{
+.plantImg {
   grid-area: image;
 }
-.Main-Area img{
+.Main-Area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
